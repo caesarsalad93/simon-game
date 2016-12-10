@@ -21,6 +21,7 @@ var simon = {
       if(response === stringed){
         simon.computer();
       }else{
+        simon.instructions = [];
         console.log('you lose!');
       }
     }, 2000 );
