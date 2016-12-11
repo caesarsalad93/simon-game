@@ -8,21 +8,27 @@ var simon = {
   },
 
   computer: function(){
+    var output = document.querySelector('h1');
     var randomColor = this.randomColor();
     this.instructions.push(randomColor);
     
     
     var stringed = simon.instructions.join(' ');
-    console.log(stringed);
+    output.innerHTML = stringed;
+    
+    //after 2 seconds
+    setTimeout(function(){
+      output.innerHTML = "";
+    },1500);
     
     setTimeout(function() {
-      console.clear();
       var response = prompt('What colors?');
+      console.log(output);
       if(response === stringed){
         simon.computer();
       }else{
         simon.instructions = [];
-        console.log('you lose!');
+        output.innerHTML = 'You lose!';
       }
     }, 2000 );
 
