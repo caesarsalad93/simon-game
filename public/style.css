@@ -1,0 +1,83 @@
+.optionsChilden{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#simon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+}
+#container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body{
+  background-color: pink;
+}
+#board{
+  display: flex;
+  width: 430px;
+  height: 430px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: black;
+  border: 20px solid black;
+  border-radius: 46%;
+  max-width: 75%;
+  max-height: 75%;
+}
+
+.color{
+  display: flex;
+  height: 200px;
+  width: 200px;
+  flex-direction: row;
+  border-radius: 20px;
+  opacity: .5;
+}
+.spacer{
+  display: flex;
+  height: 200px;
+  width: 30px;
+}
+#options{
+  display: flex;
+  width:430px;
+  height: 30px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: roboto;
+  font-weight: bold;
+}
+
+
+#red{
+  background-color: red;
+  border-top-left-radius : 100%;
+}
+#blue{
+  background-color: blue;
+  border-top-right-radius : 100%;
+}
+#green{
+  background-color: green;
+  border-bottom-left-radius : 100%;
+}
+#yellow{
+  background-color: yellow;
+  border-bottom-right-radius : 100%;
+}
+
+.color:hover{
+  cursor: pointer;
+}
+
+#play:hover{
+  cursor:pointer;
+}
+
