@@ -1,17 +1,33 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <link id="favicon" rel="icon" href="https://gomix.com/favicon-app.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../public/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
-    <button onclick="simon.computer()">play</button>
     <h1></h1>
+    <audio id = "redSound" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+    <audio id = "blueSound" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+    <audio id = "greenSound" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+    <audio id = "yellowSound" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+    <audio id = "error" src="http://www.soundjay.com/button/beep-02.mp3"></audio>
+<div id="container">
+    <div id="board">
+      <div id="red" class="color"></div>
+      <div class="spacer"></div>
+      <div id="blue" class="color"></div>
+        <div id="options">
+          <span id="score">0</span>
+          <span id="simon">Simon</span>
+          <span id="play">Play</span>
+        </div>
+      <div id="green" class="color"></div>
+      <div class="spacer"></div>
+      <div id="yellow" class="color"></div>
+    </div>
+</div>    
     
-    
-
-
-    <script src="/client.js"></script>
+    <script src="../public/client.js"></script>
   </body>
 </html>
